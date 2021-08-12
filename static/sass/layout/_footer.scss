@@ -1,0 +1,45 @@
+.footer {
+  height: 10rem;
+  background-color: whitesmoke;
+  border-top: 1px solid #e1e1e1;
+  padding: 3.5rem;
+
+  &__text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+  }
+
+  &__icon {
+    display: inline-block;
+    transition: all.2s;
+
+    & > .facebook {
+      &:hover {
+        stroke: #1877f2;
+        transform: scale(0.9);
+      }
+    }
+
+    & > .instagram {
+      &:hover {
+        stroke: #e4405f;
+        transform: scale(0.9);
+      }
+    }
+
+    & > .twitter {
+      &:hover {
+        stroke: #1da1f2;
+        transform: scale(0.9);
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+
+    &-box {
+      text-align: right;
+    }
+  }
+}

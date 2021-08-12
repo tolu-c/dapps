@@ -1,0 +1,34 @@
+.header {
+  width: 100%;
+  height: 12rem;
+  background-color: white;
+  box-shadow: .1rem .3rem 2rem gray;
+  position: relative;
+
+  &__logo {
+    height: inherit;
+    width: inherit;
+    margin-right: 2rem;
+
+    &__box {
+      position: absolute;
+      left: 10rem;
+      top: 4rem;
+      height: 5rem;
+    }
+
+    &__text {
+      font-size: 2.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 2rem;
+    right: 20rem;
+  }
+}
+
