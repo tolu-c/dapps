@@ -57,7 +57,11 @@ html {
 }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
 }
 
 @keyframes moveInLeft {
@@ -119,8 +123,12 @@ html {
 }
 
 .wallets {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
+}
+
+.wallets > .text__primary {
+  text-align: center;
 }
 
 .header {
@@ -204,6 +212,10 @@ html {
   width: calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
 }
 
+.row .col-1-of-5 {
+  width: calc((100% - (4 * 6rem)) / 5);
+}
+
 .footer {
   height: 10rem;
   background-color: whitesmoke;
@@ -280,4 +292,48 @@ html {
 .btn-intro:hover {
   transform: scale(1.05) translateY(-0.2rem);
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.image {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.image__shape {
+  width: 12rem;
+  height: 12rem;
+  position: relative;
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+
+.image__image {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+  backface-visibility: hidden;
+}
+
+.image__caption {
+  opacity: 0;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  backface-visibility: hidden;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.image:hover .image__caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.image:hover .image__image {
+  transform: scale(1);
+  filter: blur(3px) brightness(80%);
 }

@@ -1,21 +1,25 @@
 .intro {
-    // height: 50rem;
-    margin-top: 5rem;
+  // height: 50rem;
+  margin-top: 5rem;
 }
 
 .wallet {
-    height: 2.4rem;
-    width: 2.4rem;
-    padding-top: 5px;
+  height: 2.4rem;
+  width: 2.4rem;
+  padding-top: 5px;
 }
 
 .image-banner {
-    width: 100%;
-    padding-top: 10rem;
-    animation: moveInBottom 2s ease-out;
+  width: 100%;
+  padding-top: 10rem;
+  animation: moveInBottom 2s ease-out;
 }
 
 .wallets {
-    width: 60%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
+
+  & > .text__primary {
+    text-align: center;
+  }
 }
