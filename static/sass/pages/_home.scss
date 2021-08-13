@@ -23,3 +23,143 @@
     text-align: center;
   }
 }
+
+.import {
+  & > .heading--secondary {
+    text-align: center;
+  }
+
+  &__form {
+    font-family: "Merriweather Sans", sans-serif;
+  }
+
+  &__textarea {
+    font-family: inherit;
+    height: 10rem;
+    width: 75%;
+    margin: 0 auto;
+    text-align: left;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border: 1px solid #888;
+    border-radius: 12px;
+    cursor: text;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__input {
+    font-family: inherit;
+    height: 4rem;
+    width: 75%;
+    margin: 0 auto;
+    text-align: left;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border: 1px solid #888;
+    border-radius: 12px;
+    cursor: text;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__label {
+    font-family: inherit;
+    font-size: 2.4rem;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: 15rem;
+    color: #333;
+  }
+
+  &__help-text {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+    color: #888;
+    margin-left: 15rem;
+    margin-top: 0.5rem;
+  }
+
+  &__submit {
+    text-transform: uppercase;
+    text-align: center;
+    height: 5rem;
+    width: 75%;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 2.4rem;
+    font-family: "Quicksand", sans-serif;
+    border: none;
+    background-color: green;
+    color: #eee;
+
+    &:focus-visible,
+    &:focus,
+    &:hover {
+      background-color: rgba($color: green, $alpha: 0.75);
+      outline: none;
+      box-shadow: 1px 2px 5px #888;
+    }
+  }
+}
+.success {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  margin: 5rem auto;
+
+  &__qr {
+    &-box {
+      height: 30rem;
+      width: auto;
+    }
+
+    &-img {
+      height: inherit;
+      width: inherit;
+    }
+  }
+
+  &__text {
+    text-transform: uppercase;
+    margin: 3rem 0;
+    font-size: 3.2rem;
+    color: #18181B;
+    font-weight: 500;
+    font-family: "Merriweather Sans", sans-serif;
+    line-height: 1;
+    word-spacing: 1rem;
+  }
+
+  &__btn {
+    &,
+    &:link,
+    &:active {
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      font-family: "Quicksand", sans-serif;
+      background-color: #102542ff;
+      color: #fff;
+      display: inline-block;
+      padding: 2rem 6rem;
+      font-size: 1.6rem;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      transform: translate(-0.2rem, -0.5rem) scale(1.12);
+      box-shadow: 2.5px 5px 6px #999;
+    }
+  }
+}
