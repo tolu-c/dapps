@@ -12,6 +12,24 @@ body {
   box-sizing: border-box;
 }
 
+@import "../abstract/mixins";
+
 html {
   font-size: 62.5%; // 1rem = 10px
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px
+  }
+
+  @include respond(phone) {
+    font-size: 37.5%; // 1rem = 6px
+  }
+
+  @include respond(small-phone) {
+    font-size: 31.25%; // 1rem = 5px
+  }
 }

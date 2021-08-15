@@ -2,16 +2,55 @@
   height: 10rem;
   background-color: white;
   border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
   padding: 3.5rem;
+
+  @include respond(small-phone) {
+    height: 20rem;
+    padding: 4rem;
+  }
 
   &__text {
     font-family: "Montserrat", sans-serif;
     font-size: 2.4rem;
+
+    @include respond(small-phone) {
+      font-size: 3.2rem !important;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+    }
   }
 
   &__icon {
     display: inline-block;
     transition: all.2s;
+    height: 3.6rem;
+    width: auto;
+
+    @include respond(small-phone) {
+      width: auto;
+      height: 6.4rem;
+    }
+
+    & > svg {
+      width: 100%;
+      height: 100%;
+
+      @include respond(small-phone) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-box {
+      text-align: right;
+
+      @include respond(small-phone) {
+        text-align: center;
+        margin-top: 2rem;
+      }
+    }
 
     & > .facebook {
       &:hover {
@@ -36,10 +75,6 @@
 
     &:not(:last-child) {
       margin-right: 2.5rem;
-    }
-
-    &-box {
-      text-align: right;
     }
   }
 }

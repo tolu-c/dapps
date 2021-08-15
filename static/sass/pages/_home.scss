@@ -1,6 +1,10 @@
 .intro {
-  // height: 50rem;
   margin-top: 5rem;
+
+  @include respond(small-phone) {
+    margin-top: 0;
+    padding: 5rem;
+  }
 }
 
 .wallet {
@@ -21,6 +25,12 @@
 
   & > .text__primary {
     text-align: center;
+
+    @include respond(small-phone) {
+      text-align: left;
+      width: 100%;
+      display: block;
+    }
   }
 }
 
@@ -31,6 +41,10 @@
 
   &__form {
     font-family: "Merriweather Sans", sans-serif;
+
+    @include respond(small-phone) {
+      margin-top: 4rem;
+    }
   }
 
   &__textarea {
@@ -45,6 +59,11 @@
     border: 1px solid #888;
     border-radius: 12px;
     cursor: text;
+
+    @include respond(small-phone) {
+      height: 15rem;
+      border-radius: 7px;
+    }
 
     &:focus {
       outline: none;
@@ -64,6 +83,11 @@
     border-radius: 12px;
     cursor: text;
 
+    @include respond(small-phone) {
+      height: 6rem;
+      border-radius: 7px;
+    }
+
     &:focus {
       outline: none;
     }
@@ -77,6 +101,12 @@
     margin-bottom: 1rem;
     margin-left: 15rem;
     color: #333;
+
+    @include respond(small-phone) {
+      margin-bottom: 1.75rem;
+      margin-left: 11rem;
+      font-size: 3.2rem;
+    }
   }
 
   &__help-text {
@@ -87,6 +117,12 @@
     color: #888;
     margin-left: 15rem;
     margin-top: 0.5rem;
+
+    @include respond(small-phone) {
+      margin-top: 1rem;
+      margin-left: 11rem;
+      font-size: 2rem;
+    }
   }
 
   &__submit {
@@ -104,6 +140,12 @@
     background-color: green;
     color: #eee;
 
+    @include respond(small-phone) {
+      height: 10rem;
+      font-size: 3.6rem;
+      border-radius: 3px;
+    }
+
     &:focus-visible,
     &:focus,
     &:hover {
@@ -113,15 +155,24 @@
     }
   }
 }
+
 .success {
   text-align: center;
   font-family: "Lato", sans-serif;
   margin: 5rem auto;
 
+  @include respond(small-phone) {
+    margin: 10rem auto;
+  }
+
   &__qr {
     &-box {
       height: 30rem;
       width: auto;
+
+      @include respond(small-phone) {
+        height: 40rem;
+      }
     }
 
     &-img {
@@ -134,11 +185,17 @@
     text-transform: uppercase;
     margin: 3rem 0;
     font-size: 3.2rem;
-    color: #18181B;
+    color: #18181b;
     font-weight: 500;
     font-family: "Merriweather Sans", sans-serif;
     line-height: 1;
     word-spacing: 1rem;
+
+    @include respond(small-phone) {
+      margin: 4rem auto;
+      font-size: 3.6rem;
+      word-spacing: .4rem;
+    }
   }
 
   &__btn {
@@ -155,6 +212,11 @@
       padding: 2rem 6rem;
       font-size: 1.6rem;
       transition: all 0.3s;
+
+      @include respond(small-phone) {
+        padding: 4rem 12rem;
+        font-size: 3.2rem;
+      }
     }
 
     &:hover {

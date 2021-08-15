@@ -8,6 +8,12 @@
     position: relative;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
+
+    @include respond(small-phone) {
+      width: 10rem;
+      height: 10rem;
+
+    }
   }
 
   &__image {
@@ -15,6 +21,11 @@
     height: 100%;
     transform: scale(1.2);
     backface-visibility: hidden;
+    transition: all 0.1s;
+
+    @include respond(small-phone) {
+      transform: scale(1.15);
+    }
   }
 
   &__caption {
@@ -29,6 +40,10 @@
     backface-visibility: hidden;
     text-align: center;
     transition: all 0.3s;
+
+    @include respond(small-phone) {
+      font-size: 1.6rem;
+    }
   }
 
   &:hover &__caption {
