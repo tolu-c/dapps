@@ -455,7 +455,7 @@ html {
 
 @media (max-width: 30em) {
   .header__logo__box {
-    height: 10rem;
+    height: 7rem;
   }
 }
 
@@ -475,7 +475,7 @@ html {
     font-weight: 700;
     display: inline-block;
     position: absolute;
-    top: 6rem;
+    top: 5rem;
     vertical-align: middle;
   }
 }
@@ -604,7 +604,8 @@ html {
 @media (max-width: 30em) {
   .footer__icon {
     width: auto;
-    height: 6.4rem;
+    height: 5.6rem;
+    display: inline-block;
   }
 }
 

@@ -30,7 +30,7 @@
       display: inline-block;
 
       @include respond(small-phone) {
-        height: 10rem;
+        height: 7rem;
       }
     }
 
@@ -48,8 +48,7 @@
         font-weight: 700;
         display: inline-block;
         position: absolute;
-        top: 6rem;
-        // left: 10rem;
+        top: 5rem;
         vertical-align: middle;
       }
 

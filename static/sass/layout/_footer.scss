@@ -30,7 +30,8 @@
 
     @include respond(small-phone) {
       width: auto;
-      height: 6.4rem;
+      height: 5.6rem;
+      display: inline-block;
     }
 
     & > svg {
