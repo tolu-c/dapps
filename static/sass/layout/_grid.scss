@@ -2,6 +2,11 @@
   max-width: 114rem;
   margin: 0 auto;
 
+  @include respond(small-phone) {
+    max-width: 80rem;
+    padding: 0 4.8rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
@@ -13,6 +18,11 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 3.6rem;
+        margin-bottom: $gutter-vertical-small;
+      }
     }
   }
 

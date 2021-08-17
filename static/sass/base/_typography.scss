@@ -59,9 +59,9 @@
     text-align: left;
 
     @include respond(small-phone) {
-      font-size: 2.4rem;
+      font-size: 2rem;
       font-weight: 400;
-      padding: 2rem;
+      padding: 3rem;
       line-height: 2;
     }
   }
