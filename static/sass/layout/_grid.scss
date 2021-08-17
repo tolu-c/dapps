@@ -19,8 +19,8 @@
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
 
-      @include respond(tab-port) {
-        margin-right: 3.6rem;
+      @include respond(small-phone) {
+        margin-right: 4rem;
         margin-bottom: $gutter-vertical-small;
       }
     }

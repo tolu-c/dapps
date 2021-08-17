@@ -524,9 +524,9 @@ html {
   margin-right: 6rem;
 }
 
-@media (max-width: 47.99875em) {
+@media (max-width: 30em) {
   .row [class^="col-"]:not(:last-child) {
-    margin-right: 3.6rem;
+    margin-right: 4rem;
     margin-bottom: 4rem;
   }
 }
@@ -686,12 +686,12 @@ html {
 
 @media (max-width: 30em) {
   .btn-intro {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     display: block;
-    font-size: 3.2rem !important;
-    padding: 3rem 4rem !important;
+    font-size: 2.8rem !important;
+    padding: 4rem 5rem !important;
   }
 }
 
