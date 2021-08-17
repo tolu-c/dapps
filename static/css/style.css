@@ -616,8 +616,8 @@ html {
 
 @media (max-width: 30em) {
   .footer__icon > svg {
-    width: 5.6rem;
-    height: 5.6rem;
+    width: 6.4rem;
+    height: 6.4rem;
   }
 }
 
@@ -628,7 +628,7 @@ html {
 @media (max-width: 30em) {
   .footer__icon-box {
     text-align: center;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
