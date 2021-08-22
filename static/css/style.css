@@ -222,12 +222,12 @@ html {
   animation: moveInBottom 2s ease-out;
 }
 
-.walletSs {
+.walletss {
   width: 100%;
   margin: 0 auto;
 }
 
-.walletSs > .text__primary {
+.walletss > .text__primary {
   text-align: center;
   margin: 0 auto;
   width: 60%;
@@ -235,7 +235,7 @@ html {
 }
 
 @media (max-width: 30em) {
-  .walletSs > .text__primary {
+  .walletss > .text__primary {
     text-align: left;
     width: 100%;
     display: block;
