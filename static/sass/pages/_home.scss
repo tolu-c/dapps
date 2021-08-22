@@ -19,12 +19,15 @@
   animation: moveInBottom 2s ease-out;
 }
 
-.wallets {
+.walletSs {
   width: 100%;
   margin: 0 auto;
 
   & > .text__primary {
     text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    justify-content: center;
 
     @include respond(small-phone) {
       text-align: left;

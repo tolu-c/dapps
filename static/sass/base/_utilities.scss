@@ -1,19 +1,24 @@
 .u-margin-bottom-big {
-    margin-bottom: 8rem !important;
+  margin-bottom: 8rem !important;
 }
 
 .u-margin-bottom-medium {
-    margin-bottom: 4rem !important;
+  margin-bottom: 4rem !important;
 }
 
 .u-margin-top-big {
-    margin-top: 8rem !important;
+  margin-top: 8rem !important;
 }
 
 .u-margin-top-small {
-    margin-top: 2rem !important;
+  margin-top: 2rem !important;
 }
 
 .u-center-text {
+    text-align: center;
     margin: 0 auto;
+  }
+
+.justify-between {
+  justify-content: space-between;
 }

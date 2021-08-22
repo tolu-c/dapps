@@ -1,4 +1,6 @@
+@import '../abstract//variables';
 .heading {
+  
   &--primary {
     font-family: "Montserrat", sans-serif;
     font-size: 3.6rem;
@@ -64,5 +66,22 @@
       padding: 3rem;
       line-height: 2;
     }
+  }
+}
+
+.heading__text--main {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  padding-top: 2rem;
+  color: rgba($color-grey-dark-3, $alpha: 0.8);
+  word-spacing: 1rem;
+  letter-spacing: 0.35rem;
+  display: block;
+
+  @include respond(small-phone) {
+    font-size: 3.2rem;
+    font-weight: 500;
   }
 }
